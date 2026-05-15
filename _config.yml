@@ -1,0 +1,29 @@
+title: Writing
+tagline: Essays by Manny Yebz
+description: >-
+  Essays on philosophy, mathematics, and the quiet authorship of meaning.
+author:
+  name: Manny Yebz
+  email: mannyyebz@gmail.com
+
+url: "https://mannyyebz.github.io"
+baseurl: "/writing"
+
+theme: minima
+minima:
+  skin: classic
+  date_format: "%B %-d, %Y"
+  social_links:
+    - { platform: github, user_url: "https://github.com/MannyYebz" }
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
