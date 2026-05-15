@@ -110,8 +110,8 @@
 
     .essay {
       display: grid;
-      grid-template-columns: 2.75rem 1fr;
-      gap: 0.5rem;
+      grid-template-columns: 3.5rem 1fr;
+      gap: 1.4rem;
       text-decoration: none;
       color: inherit;
       transition: color 220ms ease;
@@ -120,14 +120,22 @@
     .essay:hover { color: var(--accent); }
 
     .essay .num {
-      font-size: 0.7rem;
-      letter-spacing: 0.22em;
+      font-family: inherit;
+      font-style: italic;
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
       color: var(--muted);
-      padding-top: 0.65rem;
-      transition: color 220ms ease;
+      padding: 0.5rem 0.9rem 0.25rem 0;
+      text-align: right;
+      align-self: stretch;
+      border-right: 1px solid var(--rule);
+      transition: color 220ms ease, border-color 220ms ease;
     }
 
-    .essay:hover .num { color: var(--accent); }
+    .essay:hover .num {
+      color: var(--accent);
+      border-right-color: var(--accent);
+    }
 
     .essay-title {
       font-family: inherit;
@@ -202,7 +210,8 @@
       main { padding: 5rem 1.25rem 2rem; }
       .masthead { margin-bottom: 3.5rem; }
       h1.headline { font-size: 2.1rem; }
-      .essay { grid-template-columns: 2rem 1fr; }
+      .essay { grid-template-columns: 2.75rem 1fr; gap: 1rem; }
+      .essay .num { font-size: 1rem; padding-right: 0.7rem; }
       hr.rule { margin: 3.5rem 0; }
     }
   </style>
@@ -221,8 +230,18 @@
       <p class="section-label">Essays</p>
       <ul class="essays">
         <li>
+          <a class="essay" href="essays/queen-blunder-on-move-24.html">
+            <span class="num">xxiv</span>
+            <span>
+              <h2 class="essay-title">Queen Blunder on Move 24</h2>
+              <p class="essay-sub">A blunder, a clock running in another room, and a long bet on tournaments to come.</p>
+              <p class="essay-meta">May 14, 2026 <span class="arrow">&rarr;</span></p>
+            </span>
+          </a>
+        </li>
+        <li>
           <a class="essay" href="essays/against-the-necessary-wound.html">
-            <span class="num">01</span>
+            <span class="num">xiv</span>
             <span>
               <h2 class="essay-title">Against the Necessary Wound</h2>
               <p class="essay-sub">On Dostoevsky, suffering, and the quiet authorship of grief.</p>
