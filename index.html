@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manny Yebz &mdash; Writing</title>
+  <meta name="description" content="A small, growing collection of essays — on philosophy, mathematics, and the quiet authorship of meaning.">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --text: #e6e3dc;
+      --muted: #8a857d;
+      --rule: #26241f;
+      --accent: #c9b079;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Iowan Old Style", "Hoefler Text", "Palatino Linotype", "Palatino", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 8rem 1.75rem 3rem;
+    }
+
+    .masthead {
+      margin-bottom: 5rem;
+    }
+
+    .name {
+      font-size: 0.74rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 3.5rem;
+      font-weight: 400;
+    }
+
+    .name .dot {
+      color: var(--accent);
+      margin: 0 0.6rem;
+    }
+
+    h1.headline {
+      font-family: inherit;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2.75rem;
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+      margin: 0 0 2rem;
+      color: var(--text);
+    }
+
+    .bio {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: var(--text);
+      max-width: 32rem;
+      margin: 0;
+    }
+
+    hr.rule {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      width: 4rem;
+      margin: 4.5rem 0;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 2.75rem;
+    }
+
+    ul.essays {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .essays li + li {
+      margin-top: 2.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .essay {
+      display: grid;
+      grid-template-columns: 2.75rem 1fr;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: color 220ms ease;
+    }
+
+    .essay:hover { color: var(--accent); }
+
+    .essay .num {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      color: var(--muted);
+      padding-top: 0.65rem;
+      transition: color 220ms ease;
+    }
+
+    .essay:hover .num { color: var(--accent); }
+
+    .essay-title {
+      font-family: inherit;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      margin: 0 0 0.5rem;
+    }
+
+    .essay-sub {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      line-height: 1.5;
+    }
+
+    .essay:hover .essay-sub { color: var(--text); }
+
+    .essay-meta {
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .essay-meta .arrow {
+      display: inline-block;
+      margin-left: 0.5rem;
+      transition: transform 220ms ease;
+    }
+
+    .essay:hover .arrow { transform: translateX(5px); color: var(--accent); }
+
+    footer {
+      width: 100%;
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 3rem 1.75rem 3.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      gap: 2.25rem;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    footer .colophon {
+      flex: 1;
+      min-width: 12rem;
+      letter-spacing: 0.18em;
+      text-transform: none;
+      font-style: italic;
+      color: var(--muted);
+      opacity: 0.7;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 220ms ease;
+    }
+
+    footer a:hover { color: var(--accent); }
+
+    ::selection { background: var(--accent); color: var(--bg); }
+
+    @media (max-width: 600px) {
+      main { padding: 5rem 1.25rem 2rem; }
+      .masthead { margin-bottom: 3.5rem; }
+      h1.headline { font-size: 2.1rem; }
+      .essay { grid-template-columns: 2rem 1fr; }
+      hr.rule { margin: 3.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <p class="name">Manny Yebz<span class="dot">&middot;</span>Writing</p>
+      <h1 class="headline">Essays, slowly.</h1>
+      <p class="bio">A small, growing collection of essays &mdash; on philosophy, mathematics, and the quiet authorship of meaning.</p>
+    </header>
+
+    <hr class="rule">
+
+    <section>
+      <p class="section-label">Essays</p>
+      <ul class="essays">
+        <li>
+          <a class="essay" href="essays/against-the-necessary-wound.html">
+            <span class="num">01</span>
+            <span>
+              <h2 class="essay-title">Against the Necessary Wound</h2>
+              <p class="essay-sub">On Dostoevsky, suffering, and the quiet authorship of grief.</p>
+              <p class="essay-meta">May 14, 2026 <span class="arrow">&rarr;</span></p>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span class="colophon">Set in a system serif. Built by hand.</span>
+    <a href="https://github.com/MannyYebz">GitHub</a>
+    <a href="mailto:mannyyebz@gmail.com">Email</a>
+  </footer>
+</body>
+</html>

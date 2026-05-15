@@ -4,25 +4,18 @@ Essays by Manny Yebz.
 
 Live site: **https://mannyyebz.github.io/writing**
 
-Built with [Jekyll](https://jekyllrb.com/) and the [Minima](https://github.com/jekyll/minima) theme, hosted on GitHub Pages.
+A hand-built static site — pure HTML and CSS, no frameworks, no build step.
+
+## Structure
+
+```
+index.html                              Portfolio landing page
+essays/<slug>.html                      Individual essay pages
+.nojekyll                               Tells GitHub Pages to serve files as-is
+```
 
 ## Adding a new essay
 
-Drop a markdown file into `_posts/` named `YYYY-MM-DD-slug.md` with frontmatter:
-
-```yaml
----
-layout: post
-title: "Title"
-subtitle: "Optional one-line subtitle."
-date: YYYY-MM-DD
-author: Manny Yebz
----
-```
-
-## Running locally
-
-```sh
-bundle install
-bundle exec jekyll serve
-```
+1. Create `essays/<slug>.html` using `essays/against-the-necessary-wound.html` as a template.
+2. Add a new `<li>` entry to the `<ul class="essays">` block in `index.html`.
+3. Commit and push.
