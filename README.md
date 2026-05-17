@@ -29,3 +29,4 @@ quietly insists on.
 
 - `xiv` — *Against the Necessary Wound* (the fourteenth reading of Zosima's passage)
 - `xxiv` — *Queen Blunder on Move 24*
+- `xxxi` — *The Long Side of the Door* (the thirty-one nights on the bench)
